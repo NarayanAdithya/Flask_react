@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/hello", {
+    fetch("https://flask-react-skio.herokuapp.com/", {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
