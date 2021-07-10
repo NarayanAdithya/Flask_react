@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    fetch("https://flask-react-skio.herokuapp.com/hello", {
+    fetch("https://127.0.0.1:5000/hello", {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -17,7 +17,6 @@ function App() {
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
-      
       Learn React
     </div>
   );
