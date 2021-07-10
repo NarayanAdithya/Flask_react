@@ -7,6 +7,7 @@ function App() {
         "Access-Control-Allow-Origin": "*",
       },
       method: "GET",
+       mode: "no-cors",
     })
       .then((res) => res.json())
       .then((data) => console.log(data)); //check the output in console
