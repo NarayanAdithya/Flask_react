@@ -2,12 +2,11 @@ import React, { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    fetch("/hello", {
+    fetch("https://flask-react-skio.herokuapp.com/hello", {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
       method: "GET",
-      // mode: "no-cors",
     })
       .then((res) => res.json())
       .then((data) => console.log(data)); //check the output in console
