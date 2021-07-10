@@ -2,6 +2,10 @@ from flask import Flask,render_template,send_from_directory,request, jsonify,mak
 from flask_cors import CORS, cross_origin
 from app import app
 @app.route('/',methods=['GET'])
+def base():
+    return send_from_directory(app.static_folder,'index.html')
+
+
 @app.route("/hello",methods=['GET'])
 def hello():
     # return make_response(jsonify(hello))
